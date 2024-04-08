@@ -10,7 +10,6 @@ import 'package:weather_forecast_app/view/components/custom_toaster.dart';
 import 'package:weather_forecast_app/view/components/loading_dialogue.dart';
 import 'package:weather_forecast_app/view_models/weather_view_model.dart';
 class WeatherRepository {
-  /// get the user data by id
   Future<bool?> getWeather({
     required BuildContext context,
     required String location,
