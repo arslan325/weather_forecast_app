@@ -38,7 +38,7 @@ class SplashScreen extends StatelessWidget {
              String? location = await LocationService().getCurrentCityName(context);
              if(location != null){
                Future.microtask(() {
-                 WeatherRepository().getWeather(context: context, location: location ?? "").then((value) {
+                 WeatherRepository().getWeather(context: context, location: location).then((value) {
                    if(value != null){
                      context.push(AppRouteNames.homeScreenRoute);
                    }
